@@ -3,11 +3,11 @@
 Pull request are welcomed. Please follow the Airbnb style guide [Airbnb JavaScript](https://github.com/airbnb/javascript)
 
 ## Installation
-`yarn add react-tabs-component`
+`yarn add rt-tabs-component`
 
 ## Usage
 ```javascript
-import Tabs from 'recat-tabs-component';
+import Tabs from 'rt-tabs-component';
 ```
 
 ```javascript
