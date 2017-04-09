@@ -2,6 +2,9 @@
 
 Pull request are welcomed. Please follow the Airbnb style guide [Airbnb JavaScript](https://github.com/airbnb/javascript)
 
+#### Demo
+[Storybook](https://jacklam718.github.io/react-tabs-component)
+
 ## Installation
 `yarn add rt-tabs-component`
 
