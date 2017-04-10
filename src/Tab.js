@@ -6,7 +6,6 @@ const PREFIX_CLS = 'tab-component';
 const styles = {
   tab: {
     backgroundColor: '#fff',
-    boxShadow: '0 0 4px rgba(0,0,0,.15)',
   },
   tabContent: {
     padding: '24px',
