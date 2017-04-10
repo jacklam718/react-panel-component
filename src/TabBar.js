@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Component } from 'react';
+import React from 'react';
 import TabItem from './TabItem';
 
 const PREFIX_CLS = 'tabbar-component';
@@ -17,26 +17,21 @@ export type TabBarProps = {
 }
 
 const defaultProps = {
-  style: {},
+  style: null,
 };
 
-class TabBar extends Component {
-  static defaultProps = defaultProps
-  static TabItem = TabItem
-
-  props: TabBarProps
-
-  render() {
-    const { children, style } = this.props;
-    return (
-      <div
-        style={{ ...styles.tabbar, ...style }}
-        className={PREFIX_CLS}
-      >
-        {children}
-      </div>
-    );
-  }
+function TabBar({ children, style }: TabBarProps) {
+  return (
+    <div
+      style={{ ...styles.tabbar, ...style }}
+      className={PREFIX_CLS}
+    >
+      {children}
+    </div>
+  );
 }
+
+TabBar.TabItem = TabItem;
+TabBar.defaultProps = defaultProps;
 
 export default TabBar;

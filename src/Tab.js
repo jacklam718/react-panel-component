@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Component } from 'react';
+import React from 'react';
 
 const PREFIX_CLS = 'tab-component';
 const styles = {
@@ -16,7 +16,7 @@ const styles = {
   },
 };
 
-type Props = {
+export type TabProps = {
   style?: Object;
   contentStyle?: Object;
   children?: any;
@@ -25,29 +25,24 @@ type Props = {
 const defaultProps = {
   style: null,
   contentStyle: null,
-  title: null,
   children: null,
 };
 
-class Panel extends Component {
-  static defaultProps = defaultProps
-  props: Props
-
-  render() {
-    const { style, contentStyle, children } = this.props;
-    return (
-      <div
-        style={{ ...styles.tab, ...style }}
-        className={PREFIX_CLS}
-      >
-        <div style={styles.tabContent}>
-          <div style={contentStyle}>
-            {children}
-          </div>
+function Tab({ style, contentStyle, children }: TabProps) {
+  return (
+    <div
+      style={{ ...styles.tab, ...style }}
+      className={PREFIX_CLS}
+    >
+      <div style={styles.tabContent}>
+        <div style={contentStyle}>
+          {children}
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
-export default Panel;
+Tab.defaultProps = defaultProps;
+
+export default Tab;
