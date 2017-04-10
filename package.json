@@ -1,6 +1,6 @@
 {
   "name": "rt-tabs-component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "repository": "git@github.com:jacklam718/react-tabs-component.git",
   "author": "Jack Lam <jacklam718@gmail.com>",
