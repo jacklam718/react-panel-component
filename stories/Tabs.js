@@ -14,7 +14,39 @@ storiesOf('Tabs', module)
 .add('Tabs', () => (
   <Tabs
     title="Title"
-    style={{ margin: '24px' }}
+    style={{
+      margin: '24px',
+    }}
+  >
+    <Tabs.Tab label="Tab 1">
+      <h3 style={{ marginTop: 0 }}>Title This Tab 1</h3>
+      <div>
+        Content
+      </div>
+    </Tabs.Tab>
+
+    <Tabs.Tab label="Tab 2">
+      <h3 style={{ marginTop: 0 }}>Title This Tab 2</h3>
+      <div>
+        Content
+      </div>
+    </Tabs.Tab>
+
+    <Tabs.Tab label="Tab 3">
+      <h3 style={{ marginTop: 0 }}>Title This Tab 3</h3>
+      <div>
+        Content
+      </div>
+    </Tabs.Tab>
+  </Tabs>
+))
+.add('Tabs With Shadow', () => (
+  <Tabs
+    title="Title"
+    style={{
+      margin: '24px',
+      boxShadow: '0 0 4px rgba(0,0,0,.15)',
+    }}
   >
     <Tabs.Tab label="Tab 1">
       <h3 style={{ marginTop: 0 }}>Title This Tab 1</h3>
