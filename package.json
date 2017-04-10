@@ -1,16 +1,19 @@
 {
   "name": "rt-tabs-component",
   "version": "0.0.1",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": "git@github.com:jacklam718/react-tabs-component.git",
   "author": "Jack Lam <jacklam718@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "npm run clean rimraf && babel src/ -d dist/",
+    "clean": "rimraf dist",
     "storybook": "start-storybook -s ./src -p 9000",
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.1",
     "babel-loader": "^6.4.1",
@@ -24,10 +27,12 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "flow-bin": "^0.43.1",
-    "react-storybook-addon-backgrounds": "^0.0.7",
-    "yarn": "^0.22.0",
     "react": "15.5.3",
-    "react-dom": "15.5.3"
+    "react-dom": "15.5.3",
+    "react-storybook-addon-backgrounds": "^0.0.7",
+    "rimraf": "^2.6.1",
+    "webpack": "^2.3.3",
+    "yarn": "^0.22.0"
   },
   "peerDependencies": {
     "react": ">=0.14",

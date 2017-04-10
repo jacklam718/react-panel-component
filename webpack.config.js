@@ -1,16 +1,9 @@
 const path = require('path');
 
-const resolve = path.resolve;
-
 module.exports = {
-  entry: {
-    app: resolve('./src/index.js'),
-  },
+  entry: path.join(__dirname, 'src'),
 
-  output: {
-    filename: 'bundle.js',
-    path: './build',
-  },
+  devtool: false,
 
   module: {
     rules: [
@@ -24,6 +17,9 @@ module.exports = {
               'react',
               'babel-preset-es2015',
               'babel-preset-stage-0',
+            ],
+            plugins: [
+              'babel-plugin-transform-runtime',
             ],
           },
         },
