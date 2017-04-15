@@ -44,3 +44,13 @@ const Tab = Tabs.Tab;
   </Tab>
 </Tabs>
 ```
+
+## Usage with sigle tab
+```javascript
+<Tab>
+  <h3>Title</h3>
+  <div>
+    Content
+  </div>
+</Tab>
+```
